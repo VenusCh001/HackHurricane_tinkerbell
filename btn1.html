@@ -4,9 +4,80 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CALL</title>
-	<a href="emergency.html" target="_blank"><button class="button btn4">EMERGENCY</button></a>
-	<a href="no_emergency.php"target="_blank">	<button class="button btn5">NOT AN EMERGENCY</button>
-	</a>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    text-align: center;
+                }
+        
+                #map {
+                    height: 300px;
+                    width: 100%;
+                    border: 1px solid #ccc;
+                    margin-bottom: 20px;
+                }
+        
+                #trackButton {
+                    padding: 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+            </style>
+        </head>
+        <body>
+        
+            <h1>Live Location Tracking</h1>
+        
+            <div id="map"></div>
+        
+            <button id="trackButton" onclick="startTracking()">Start Tracking</button>
+        
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <script>
+                var map;
+                var marker;
+        
+                function startTracking() {
+                    if ("geolocation" in navigator) {
+                        navigator.geolocation.watchPosition(
+                            function (position) {
+                                console.log('Location Tracked Successfully:', position.coords);
+                                updateMap(position.coords);
+                            },
+                            function (error) {
+                                console.log('Location Tracking Failed:', error.message);
+                            },
+                            { enableHighAccuracy: true }
+                        );
+                    } else {
+                        alert('Geolocation is not supported by your browser');
+                    }
+                }
+        
+                function updateMap(coords) {
+                    // Initialize map if not already created
+                    if (!map) {
+                        map = L.map('map').setView([coords.latitude, coords.longitude], 13);
+        
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '© OpenStreetMap contributors'
+                        }).addTo(map);
+                    }
+        
+                    // Create or update marker
+                    if (!marker) {
+                        marker = L.marker([coords.latitude, coords.longitude]).addTo(map);
+                    } else {
+                        // Update marker position
+                        marker.setLatLng([coords.latitude, coords.longitude]);
+                    }
+        
+                    // You can customize the popup content or add additional features based on your needs
+                    marker.bindPopup('Live Location: ' + coords.latitude + ', ' + coords.longitude).openPopup();
+                }
+            </script>
 </head>
 
 </html>

@@ -27,9 +27,12 @@
 .btn3{
 	background: linear-gradient(-45deg , blue , violet);
 }
-.content a{
-	display: block;
-	background: linear-gradient(-45deg , #0aa98e ,#32ff58);
-	text-decoration: none;
-	padding: 10px;
+.content{
+	text-align: center;
+}
+.btn4{
+	background: linear-gradient(-45deg , red,pink);
+}
+.btn5{
+	background: linear-gradient(-45deg , blue,lightblue);
 }
