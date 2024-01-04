@@ -22,6 +22,12 @@ In critical moments, swift access to emergency services can be a matter of life 
 
 - **Community Notification:** A connected network alerts users when an ambulance is in route, encouraging them to clear lanes for emergency vehicles.
 
+## Technology Stack
+
+- **Frontend:** html,css,javascript
+- **Backend:** mysql
+- **Mapping Technologies:** Google Maps API , leaflet
+
 ## How AmbuTrack Addresses the Problem
 
 Currently, emergency calls involve manual coordination, leading to potential delays. **AmbuTrack** addresses this by providing a user-friendly platform for quick ambulance bookings, minimizing response time and providing real time location tracking of ambulance drivers.
