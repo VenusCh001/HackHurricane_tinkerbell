@@ -1,7 +1,7 @@
 # AmbuTrack: Revolutionizing Emergency Response
 
 ## PROJECT LINKS🔗
-[[AmbuTrack GitHub Repository](https://github.com/VenusCh001/HackHurricane_tinkerbell)](#) 
+[AmbuTrack GitHub Repository](https://github.com/VenusCh001/HackHurricane_tinkerbell)
 
 ## TEAM
 - **Project Lead:** Venus Chaudhary
