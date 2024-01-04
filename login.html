@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js"></script>
+    <title>Hospital Registration</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, button {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Registration</h1>
+        <form action="login.php" method="post" onsubmit="return validateForm()">
+            <label for="name">Name of Hospital:</label>
+            <input type="text"  name="name" id="name" required><br>
+
+            <label for="address">Address of Hospital:</label>
+            <input type="text" name="address" id="address" required><br>
+
+            <label for="phone_number">Phone Number of Hospital:</label>
+            <input type="tel" name="phone_number" id="phone_number" required><br>
+
+            <label for="num_ambulances">Number of Ambulances Available:</label>
+            <input type="number" name="num_ambulances" id="num_ambulances" required><br>
+
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+    </div>
+   
+</body>
+</html>
+
+
+
