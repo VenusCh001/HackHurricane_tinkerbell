@@ -16,7 +16,7 @@ In critical moments, swift access to emergency services can be a matter of life 
 
 ## Key Features
 
-- **Effortless Ambulance Booking:** With just a few clicks, users can book an ambulance, providing essential details about their emergencies.
+- **Effortless Ambulance Booking:** With just a few clicks, users can book an ambulance, and live track the ambulance.
 
 - **Optimized Routes:** Ambulance drivers can leverage the platform to determine the most efficient route to the nearest hospital, ensuring timely assistance.
 
@@ -24,7 +24,7 @@ In critical moments, swift access to emergency services can be a matter of life 
 
 ## How AmbuTrack Addresses the Problem
 
-Currently, emergency calls involve manual coordination, leading to potential delays. **AmbuTrack** addresses this by providing a user-friendly platform for quick ambulance bookings, minimizing response time.
+Currently, emergency calls involve manual coordination, leading to potential delays. **AmbuTrack** addresses this by providing a user-friendly platform for quick ambulance bookings, minimizing response time and providing real time location tracking of ambulance drivers.
 
 ## Technical Challenges and Solutions
 
