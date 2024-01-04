@@ -1,0 +1,35 @@
+.container{
+	margin-top: 4vh;
+	text-align: center;
+	max-width: max-content;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+.button{
+	margin: 1em;
+	border-radius: 10px;
+	padding: .5em;
+	width: 15em;
+	height: 4em;
+	font-size: 1em;
+	color: white;
+	border: none;
+	position: relative;
+}
+.btn1{
+	background: linear-gradient(-45deg , #0aa98e ,#32ff58);
+}
+.btn2{
+	background: linear-gradient(-45deg , red , orange);
+
+}
+.btn3{
+	background: linear-gradient(-45deg , blue , violet);
+}
+.content a{
+	display: block;
+	background: linear-gradient(-45deg , #0aa98e ,#32ff58);
+	text-decoration: none;
+	padding: 10px;
+}
